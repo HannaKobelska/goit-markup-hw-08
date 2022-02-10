@@ -1,0 +1,53 @@
+/* Постоянные клиенты */
+
+.clients-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
+  // margin-left: var(--card-set-gap);
+  // margin-top: var(--card-set-gap);
+}
+
+.clients-list {
+  margin-bottom: 30px;
+  margin-right: 30px;
+
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.clients-list-a {
+  width: 210px;
+  // width: 170px;
+  height: 92px;
+  display: block;
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--social-links-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: var(--social-links-color);
+
+  transition: border-color var(--animation-time) var(--animation-function),
+    fill var(--animation-time) var(--animation-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}

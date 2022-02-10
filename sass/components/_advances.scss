@@ -1,0 +1,53 @@
+/* Преимущества */
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+}
+
+.advances-set {
+  padding: 0;
+
+  // display: flex;
+  // margin-left: calc(-1 * var(--card-set-gap));
+  // margin-top: calc(-1 * var(--card-set-gap));
+
+  &__title {
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+  }
+
+  // &__item {
+  // flex-basis: calc(100% / 4 - var(--card-set-gap));
+  // margin-left: var(--card-set-gap);
+  // margin-top: var(--card-set-gap);
+  // }
+
+  &__thumb {
+    width: 450px;
+    height: 120px;
+    background-color: var(--team-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    line-height: 1.71;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+  }
+
+  // &__text:last-child {
+  //   margin-bottom: 0;
+  // }
+}

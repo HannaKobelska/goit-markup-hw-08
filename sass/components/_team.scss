@@ -1,0 +1,109 @@
+/* Наша команда */
+
+.team {
+  background-color: var(--team-background-color);
+
+  &-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+
+    // font-size: 36px;
+    // margin-bottom: 50px;
+  }
+
+  &-card {
+    padding-top: 30px;
+  }
+
+  &-set {
+    padding: 0;
+
+    // display: flex;
+    // margin-left: calc(-1 * var(--card-set-gap));
+    // margin-top: calc(-1 * var(--card-set-gap));
+  }
+}
+
+.team-member {
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  // flex-basis: calc(100% / 4 - var(--card-set-gap));
+  // margin-left: var(--card-set-gap);
+  // margin-top: var(--card-set-gap);
+
+  &-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-text-color);
+  }
+
+  &-job {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--main-text-color);
+    margin-top: 10px;
+  }
+
+  &-img {
+    width: 450px;
+  }
+}
+
+.social-links {
+  &-set {
+    margin: 16px 122px 0px 122px;
+  }
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+}
+
+.social-links-item {
+  margin-right: 10px;
+  background-color: var(--primary-white-color);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-links-item-a {
+  fill: var(--social-links-color);
+  border-radius: 50%;
+  padding: 12px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  transition: background-color var(--animation-time) var(--animation-function),
+    fill var(--animation-time) var(--animation-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+  }
+}
