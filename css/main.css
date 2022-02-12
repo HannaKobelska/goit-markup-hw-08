@@ -1462,8 +1462,15 @@ textarea {
 /* Портфолио Кнопки фильтры */
 .filters {
   background-color: var(--primary-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
@@ -1493,18 +1500,46 @@ textarea {
 }
 
 .buttons-set {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-set {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-set {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-set-item:not(:first-child) {
   margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons-set-item:nth-child(4) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons-set-item:nth-child(n + 4) {
+    margin-top: 15px;
+  }
 }
 
 /* Портфолио Проекты */
@@ -1544,6 +1579,10 @@ textarea {
   overflow: hidden;
 }
 
+.project-thumb img {
+  width: 100%;
+}
+
 .projects-card {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #eeeeee;
@@ -1552,21 +1591,44 @@ textarea {
 }
 
 .projects-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 0;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+@media screen and (min-width: 768px) {
+  .projects-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+  }
 }
 
 .projects-set-item {
-  -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
-      flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+  margin-bottom: 30px;
+}
+
+.projects-set-item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-set-item {
+    -ms-flex-preferred-size: calc(100% / 2 - var(--card-set-gap));
+        flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-set-item {
+    -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
+        flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
 }
 
 .projects-overlay {
