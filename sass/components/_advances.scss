@@ -4,8 +4,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advances-set {
@@ -23,6 +25,12 @@
       display: flex;
       flex-wrap: wrap;
       flex-basis: calc(100% / 2 - var(--card-set-gap));
+      margin-left: var(--card-set-gap);
+      margin-top: var(--card-set-gap);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - var(--card-set-gap));
       margin-left: var(--card-set-gap);
       margin-top: var(--card-set-gap);
     }
@@ -49,6 +57,10 @@
 
     @media screen and (max-width: 767px) {
       width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
     }
   }
 

@@ -47,12 +47,12 @@
     padding: 10px 56px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     max-width: 450px;
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 450px;
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 }
 
@@ -117,12 +117,7 @@
     line-height: 14px;
     color: var(--main-text-color);
 
-    @media screen and (min-width: 480px) {
-      font-size: 12px;
-      line-height: 14px;
-    }
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 24px;
     }
@@ -217,12 +212,7 @@
   font-size: 12px;
   line-height: 14px;
 
-  @media screen and (min-width: 480px) {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 24px;
   }

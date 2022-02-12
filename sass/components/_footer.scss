@@ -12,16 +12,15 @@
 
   .container {
     text-align: center;
-    // display: flex;
-    // align-items: baseline;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   .signup {
     margin-left: auto;
-  }
-
-  .social-links-set {
-    margin: 0, 122px;
   }
 
   .hero__button {
@@ -101,9 +100,11 @@
 }
 
 .joinus {
-  // &-links {
-  //   // margin-left: 70px;
-  // }
+  &-links {
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
 
   &-title {
     font-weight: bold;
@@ -113,14 +114,29 @@
     color: var(--primary-white-color);
     margin-bottom: 20px;
     margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }
 
 .signup {
+  @media (min-width: 768px) and (max-width: 1200px) {
+    margin-top: 60px;
+  }
+
   &-set {
-    // display: flex;
-    // align-items: baseline;
     padding: 0;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &-icon {
@@ -134,6 +150,8 @@
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -156,7 +174,27 @@
     color: var(--footer-item-color);
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.div-footer-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
+
+.footer-address-container {
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }

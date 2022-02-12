@@ -20,6 +20,11 @@
   line-height: 1.17;
   text-decoration: none;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
   .part-a {
     color: var(--accent-color);
   }
@@ -101,9 +106,14 @@
   fill: var(--main-text-color);
   padding: 0;
 
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 
   transition: color var(--animation-time) var(--animation-function),
     fill var(--animation-time) var(--animation-function);
@@ -124,8 +134,10 @@
     margin-bottom: 10px;
   }
 
-  // display: flex;
-  // align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-contacts .item + .item {
@@ -140,10 +152,19 @@
   &.envelope {
     width: 14px;
     height: 10px;
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
   }
 
   &.tel {
     width: 10px;
     height: 14px;
+
+    @media screen and (min-width: 1200px) {
+      height: 16px;
+    }
   }
 }
