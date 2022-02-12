@@ -155,4 +155,8 @@
     align-items: center;
     color: var(--footer-item-color);
   }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
