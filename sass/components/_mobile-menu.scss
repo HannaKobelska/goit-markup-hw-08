@@ -22,8 +22,8 @@
   fill: var(--accent-color);
 }
 
-.menu-toggle:hover + .mobile-menu__link--current,
-.menu-toggle:focus + .mobile-menu__link--current {
+.menu-toggle:hover ~ .mobile-menu .mobile-menu__link--current,
+.menu-toggle:hover ~ .mobile-menu .mobile-menu__link--current {
   color: var(--primary-black-color);
 }
 
