@@ -22,7 +22,11 @@
 }
 
 .clients-list-a {
-  width: 210px;
+  width: calc((100vw - 60px) / 2);
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 226px;
