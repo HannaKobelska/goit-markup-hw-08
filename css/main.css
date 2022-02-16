@@ -506,13 +506,13 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: url(images/Hero_tab_1x.jpg);
+    background-image: url("images/Hero_tab_1x.jpg");
   }
 }
 
 @media screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(images/Hero_tab_2x.jpg);
+    background-image: url("images/Hero_tab_2x.jpg");
   }
 }
 

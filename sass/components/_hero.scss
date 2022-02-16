@@ -44,10 +44,10 @@
   }
 
   @media screen and (min-width: 480px) {
-    background-image: url(images/Hero_tab_1x.jpg);
+    background-image: url("images/Hero_tab_1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(images/Hero_tab_2x.jpg);
+      background-image: url("images/Hero_tab_2x.jpg");
     }
   }
   @media screen and (min-width: 768px) {
